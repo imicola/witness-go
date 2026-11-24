@@ -1,0 +1,20 @@
+{
+  "provenance": "synthetic teaching fixture; not a historical incident or real Nightingale notification",
+  "event": {
+    "key": "demo-only-1",
+    "identity": {"target": "cpu-http/work", "run_id": "demo-run-A"},
+    "received_at": "2026-11-23T10:00:20+08:00"
+  },
+  "window": {
+    "start": "2026-11-23T09:59:50+08:00",
+    "end": "2026-11-23T10:00:30+08:00",
+    "max_gap_ns": 10000000000
+  },
+  "samples": [
+    {"identity": {"target": "cpu-http/work", "run_id": "demo-run-A"}, "at": "2026-11-23T09:59:50+08:00", "cpu": {"usage_us": 100, "throttled_us": 0}},
+    {"identity": {"target": "cpu-http/work", "run_id": "demo-run-A"}, "at": "2026-11-23T10:00:00+08:00", "cpu": {"usage_us": 200, "throttled_us": 0}},
+    {"identity": {"target": "cpu-http/work", "run_id": "demo-run-A"}, "at": "2026-11-23T10:00:10+08:00", "cpu": {"usage_us": 300, "throttled_us": 80}},
+    {"identity": {"target": "cpu-http/work", "run_id": "demo-run-A"}, "at": "2026-11-23T10:00:20+08:00", "cpu": {"usage_us": 400, "throttled_us": 160}},
+    {"identity": {"target": "cpu-http/work", "run_id": "demo-run-A"}, "at": "2026-11-23T10:00:30+08:00", "cpu": {"usage_us": 500, "throttled_us": 180}}
+  ]
+}
