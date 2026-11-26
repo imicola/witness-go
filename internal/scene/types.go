@@ -13,11 +13,52 @@ type Sample struct {
 	Identity Identity  `json:"identity"`
 	At       time.Time `json:"at"`
 	CPU      *CPU      `json:"cpu,omitempty"`
+	PSI      *PSI      `json:"psi,omitempty"`
+}
+
+// Clone returns a deep copy of Sample so buffer/task/selection ownership stays isolated.
+func (s Sample) Clone() Sample {
+	copied := s
+	if s.CPU != nil {
+		cpu := *s.CPU
+		copied.CPU = &cpu
+	}
+	if s.PSI != nil {
+		psi := *s.PSI
+		copied.PSI = &psi
+	}
+	return copied
 }
 
 type CPU struct {
 	UsageUS     uint64 `json:"usage_us"`
 	ThrottledUS uint64 `json:"throttled_us"`
+	NrThrottled uint64 `json:"nr_throttled,omitempty"`
+	// QuotaUS / PeriodUS come from cgroup v2 cpu.max; QuotaUnlimited is true when quota is "max".
+	QuotaUS        uint64 `json:"quota_us,omitempty"`
+	PeriodUS       uint64 `json:"period_us,omitempty"`
+	QuotaUnlimited bool   `json:"quota_unlimited,omitempty"`
+
+	// Delta fields are valid only when computed from monotonic cumulative counters
+	// of the same (Target, RunID). Never fabricate zero deltas on initial, run change, or reset.
+	DeltaValid       bool   `json:"delta_valid,omitempty"`
+	DeltaUsageUS     uint64 `json:"delta_usage_us,omitempty"`
+	DeltaThrottledUS uint64 `json:"delta_throttled_us,omitempty"`
+	DeltaNrThrottled uint64 `json:"delta_nr_throttled,omitempty"`
+	DeltaReason      string `json:"delta_reason,omitempty"`
+}
+
+// PSI captures host CPU Pressure Stall Information from /proc/pressure/cpu.
+type PSI struct {
+	SomeAvg10   float64 `json:"some_avg10"`
+	SomeAvg60   float64 `json:"some_avg60"`
+	SomeAvg300  float64 `json:"some_avg300"`
+	SomeTotalUS uint64  `json:"some_total_us"`
+	HasFull     bool    `json:"has_full,omitempty"`
+	FullAvg10   float64 `json:"full_avg10,omitempty"`
+	FullAvg60   float64 `json:"full_avg60,omitempty"`
+	FullAvg300  float64 `json:"full_avg300,omitempty"`
+	FullTotalUS uint64  `json:"full_total_us,omitempty"`
 }
 
 type Event struct {

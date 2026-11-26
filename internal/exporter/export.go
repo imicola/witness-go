@@ -8,12 +8,12 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"witness-go/internal/pipeline"
-	"witness-go/internal/scene"
-	"witness-go/internal/window"
 	"os"
 	"path/filepath"
 	"time"
+	"witness-go/internal/pipeline"
+	"witness-go/internal/scene"
+	"witness-go/internal/window"
 )
 
 var _ pipeline.Exporter = (*FileExporter)(nil)
@@ -125,6 +125,12 @@ func sameSampleSeq(a, b []scene.Sample) bool {
 			return false
 		}
 		if a[i].CPU != nil && *a[i].CPU != *b[i].CPU {
+			return false
+		}
+		if (a[i].PSI == nil) != (b[i].PSI == nil) {
+			return false
+		}
+		if a[i].PSI != nil && *a[i].PSI != *b[i].PSI {
 			return false
 		}
 	}

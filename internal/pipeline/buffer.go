@@ -28,12 +28,7 @@ func (r *Ring) Append(s scene.Sample) error {
 	if s.Identity.RunID == "" || s.Identity.Target == "" {
 		return errors.New("sample.Identity is incomplete")
 	}
-	copiled := s
-	if s.CPU != nil {
-		cpu := *s.CPU
-		copiled.CPU = &cpu
-	}
-	r.slots[r.next] = copiled
+	r.slots[r.next] = s.Clone()
 	r.next = (r.next + 1) % len(r.slots)
 	if r.count < len(r.slots) {
 		r.count++
@@ -46,12 +41,7 @@ func (r *Ring) Snapshot() []scene.Sample {
 	samples := make([]scene.Sample, r.count)
 	oldest := (r.next - r.count + len(r.slots)) % len(r.slots)
 	for i := 0; i < r.count; i++ {
-		copiled := r.slots[(oldest+i)%len(r.slots)]
-		if r.slots[(oldest+i)%len(r.slots)].CPU != nil {
-			cpu := *r.slots[(oldest+i)%len(r.slots)].CPU
-			copiled.CPU = &cpu
-		}
-		samples[i] = copiled
+		samples[i] = r.slots[(oldest+i)%len(r.slots)].Clone()
 	}
 	return samples
 }

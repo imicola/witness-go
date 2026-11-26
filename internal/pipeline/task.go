@@ -2,9 +2,9 @@ package pipeline
 
 import (
 	"errors"
+	"time"
 	"witness-go/internal/scene"
 	"witness-go/internal/window"
-	"time"
 )
 
 var (
@@ -91,13 +91,7 @@ func (t *Task) Offer(s scene.Sample) error {
 		t.failure = ErrCapacity
 		return t.failure
 	}
-	copiled := s
-
-	if s.CPU != nil {
-		cpu := *s.CPU
-		copiled.CPU = &cpu
-	}
-	t.samples = append(t.samples, copiled)
+	t.samples = append(t.samples, s.Clone())
 
 	return nil
 }

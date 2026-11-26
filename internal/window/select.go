@@ -3,9 +3,9 @@ package window
 
 import (
 	"errors"
-	"witness-go/internal/scene"
 	"sort"
 	"time"
+	"witness-go/internal/scene"
 )
 
 // Select must not mutate input. It receives a completed snapshot, not a live buffer.
@@ -47,12 +47,7 @@ func Select(samples []scene.Sample, event scene.Event, requested scene.Window) (
 		if s.At.Before(requested.Start) || s.At.After(requested.End) {
 			continue
 		}
-		copied := s
-		if s.CPU != nil {
-			cpu := *s.CPU
-			copied.CPU = &cpu
-		}
-		needSamples = append(needSamples, copied)
+		needSamples = append(needSamples, s.Clone())
 		if first == nil || s.At.Before(*first) {
 			first = &s.At
 		}
