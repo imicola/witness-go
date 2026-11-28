@@ -10,18 +10,21 @@
 
 | 模块 | 职责与当前状态 |
 | --- | --- |
-| `cmd/scene` | 离线命令行入口，支持 `inspect`、`select`、`export` 与 `replay` 四种模式 |
-| `internal/scene` | 核心类型定义：`Identity`（分离逻辑目标与运行实例）、`Sample`、`Event`、`Window`、`Gap`、`Selection`、`Export` |
+| `cmd/scene` | 命令行入口，支持离线 `inspect`/`select`/`export`/`replay` 与 Linux 在线 `run` 模式 |
+| `internal/scene` | 核心类型定义：`Identity`（分离逻辑目标与运行实例）、`Sample`（含 `CPU`/`PSI` 与 `Clone`）、`Event`、`Window`、`Gap`、`Selection`、`Export` |
 | `internal/fixture` | 严格 JSON 构造夹具读取（拒绝未知字段、多文档尾随及缺 `provenance`） |
 | `internal/window` | `Select` 点样本闭区间筛选、排序/重复校验、指针深拷贝与 `leading`/`internal`/`trailing`/`no_samples` 缺口计算 |
-| `internal/pipeline` | 有界环形缓冲 `Ring`、单事件前后窗任务 `Task`（`Start`/`Offer`/`Finish`），以及 `Sampler`/`EventSource`/`Exporter`/`Replayer` 接口 |
+| `internal/collector` | Linux cgroup v2（`cpu.max`、`cpu.stat`）与宿主 `/proc/pressure/cpu` 跨层解析，以及同 `RunID` 防负增量/重启重置状态机 `DeltaTracker` |
+| `internal/notify` | Nightingale `notify-receiver` 增量游标轮询 `ReceiverSource` 与 `TranslateRecord`（过滤恢复通知、`hash:first_trigger_time` 稳定去重键、逻辑目标到 `RunID` 绑定） |
+| `internal/pipeline` | 有界环形缓冲 `Ring`、单事件前后窗任务 `Task`、串行去重协调器 `Coordinator` 与单 owner 并发驱动循环 `Runner` |
 | `internal/exporter` | `FileExporter`（同目录临时文件 + 显式 `Close` 检查 + `os.Rename` 原子替换）与严格 `Read`/`ReadFile`/`Summarize` |
 | `internal/replay` | 独立恢复判定 `Judge`（校验同目标、同次抓取及样本新鲜度，区分 `probe failed`、`probe path recovered` 与 `insufficient evidence`） |
+| `examples` | 2026-11-28 本地 Linux 实测脱敏导出样例（`live-cpu-quota-export.json`） |
 | `testdata` | 明确标明来源为构造教学夹具的演示数据，非实测故障现场 |
-| `docs` | 缓冲任务设计与在线装配边界说明 |
+| `docs` | 缓冲任务设计、在线装配边界与一页 Linux 配额限流复跑说明（`reproduce-linux-quota.md`） |
 
-当前**已验证范围**：纯 Go 离线闭环（`Select`、`Ring`、`Start`/`Offer`/`Finish`、`FileExporter`、严格 `Read`、`Judge` 及 CLI `inspect`/`select`/`export`/`replay`）和各自反例与边界回归测试。  
-当前**尚未接入范围**：Linux `cgroup v2`（`cpu.max`、`cpu.stat`）与宿主 `/proc/pressure/cpu` 在线采样器、Nightingale `notify-receiver` 事件接入循环、同实例防负增量/重启基线重设、以及配额收紧/撤销实测。
+当前**已验证范围**：全仓六包（`collector`、`exporter`、`notify`、`pipeline`、`replay`、`window`）单元测试与 `-race` 竞态回归，以及 2026-11-28 本地 Linux 单机实测闭环（持续采样 → 收紧容器 CPU 配额 → Nightingale 延迟告警触发 → 原子导出 48 条真实样本 → 撤销恢复对照 → `cmd/scene -mode replay` 严格重读，见 [docs/reproduce-linux-quota.md](docs/reproduce-linux-quota.md) 与 [examples/live-cpu-quota-export.json](examples/live-cpu-quota-export.json)）。  
+当前**暂缓扩展范围**：多实例并行采集、跨网络采集、记录器跨进程持久去重以及采集开销正式基准压测。
 
 ## 快速开始
 

@@ -1,0 +1,1184 @@
+{
+  "schema_version": "v1",
+  "provenance": "live linux cgroup v2 + host psi + nightingale notify-receiver",
+  "exported_at": "2026-11-28T13:40:47.530861821+08:00",
+  "event": {
+    "key": "28bd958e906c0f9340064b751c172ab9:1795844432",
+    "identity": {
+      "target": "http://test-http:8080/healthz",
+      "run_id": "f35df5680576:pid-113368"
+    },
+    "received_at": "2026-11-28T05:40:32.075344925Z",
+    "source_time": "2026-11-28T05:40:32Z"
+  },
+  "selection": {
+    "requested": {
+      "start": "2026-11-28T05:39:57.075344925Z",
+      "end": "2026-11-28T05:40:47.075344925Z",
+      "max_gap_ns": 5000000000
+    },
+    "samples": [
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:39:59.53096855+08:00",
+        "cpu": {
+          "usage_us": 4222314,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_reason": "initial"
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.08,
+          "some_total_us": 98530438,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:00.530530053+08:00",
+        "cpu": {
+          "usage_us": 4222314,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.08,
+          "some_total_us": 98537689,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:01.531008204+08:00",
+        "cpu": {
+          "usage_us": 4664878,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 442564
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98542886,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:02.529971465+08:00",
+        "cpu": {
+          "usage_us": 5186742,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 521864
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98548114,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:03.530425531+08:00",
+        "cpu": {
+          "usage_us": 5702703,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 515961
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98553211,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:04.529887017+08:00",
+        "cpu": {
+          "usage_us": 6178519,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 475816
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98558824,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:05.530826153+08:00",
+        "cpu": {
+          "usage_us": 6693761,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 515242
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98563968,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:06.530027978+08:00",
+        "cpu": {
+          "usage_us": 7193501,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 499740
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98571470,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:07.530023833+08:00",
+        "cpu": {
+          "usage_us": 7683262,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 489761
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98576775,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:08.529847519+08:00",
+        "cpu": {
+          "usage_us": 8231408,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 548146
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98582217,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:09.530874776+08:00",
+        "cpu": {
+          "usage_us": 8781906,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 550498
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98587323,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:10.529693646+08:00",
+        "cpu": {
+          "usage_us": 9259344,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 477438
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98596551,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:11.530396699+08:00",
+        "cpu": {
+          "usage_us": 9799711,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 540367
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98601362,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:12.530798083+08:00",
+        "cpu": {
+          "usage_us": 10337689,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 537978
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98606993,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:13.530684546+08:00",
+        "cpu": {
+          "usage_us": 10854976,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 517287
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98612380,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:14.530570987+08:00",
+        "cpu": {
+          "usage_us": 11348061,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 493085
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98617586,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:15.530567751+08:00",
+        "cpu": {
+          "usage_us": 11855942,
+          "throttled_us": 0,
+          "period_us": 100000,
+          "quota_unlimited": true,
+          "delta_valid": true,
+          "delta_usage_us": 507881
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98635419,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:16.529916312+08:00",
+        "cpu": {
+          "usage_us": 11983863,
+          "throttled_us": 1022168,
+          "nr_throttled": 6,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 127921,
+          "delta_throttled_us": 1022168,
+          "delta_nr_throttled": 6
+        },
+        "psi": {
+          "some_avg10": 0,
+          "some_avg60": 0.01,
+          "some_avg300": 0.07,
+          "some_total_us": 98779950,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:17.52995879+08:00",
+        "cpu": {
+          "usage_us": 12083858,
+          "throttled_us": 2990147,
+          "nr_throttled": 16,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99995,
+          "delta_throttled_us": 1967979,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 2.53,
+          "some_avg60": 0.47,
+          "some_avg300": 0.16,
+          "some_total_us": 99317851,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:18.529984636+08:00",
+        "cpu": {
+          "usage_us": 12183950,
+          "throttled_us": 4966589,
+          "nr_throttled": 26,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100092,
+          "delta_throttled_us": 1976442,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 2.53,
+          "some_avg60": 0.47,
+          "some_avg300": 0.16,
+          "some_total_us": 99736939,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:19.530672213+08:00",
+        "cpu": {
+          "usage_us": 12283173,
+          "throttled_us": 7016120,
+          "nr_throttled": 36,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99223,
+          "delta_throttled_us": 2049531,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 10.77,
+          "some_avg60": 2.02,
+          "some_avg300": 0.49,
+          "some_total_us": 100264762,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:20.529812183+08:00",
+        "cpu": {
+          "usage_us": 12383641,
+          "throttled_us": 9038660,
+          "nr_throttled": 46,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100468,
+          "delta_throttled_us": 2022540,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 10.77,
+          "some_avg60": 2.02,
+          "some_avg300": 0.49,
+          "some_total_us": 100729637,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:21.529957068+08:00",
+        "cpu": {
+          "usage_us": 12483469,
+          "throttled_us": 11004835,
+          "nr_throttled": 56,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99828,
+          "delta_throttled_us": 1966175,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 17.51,
+          "some_avg60": 3.53,
+          "some_avg300": 0.81,
+          "some_total_us": 101067663,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:22.529802421+08:00",
+        "cpu": {
+          "usage_us": 12582202,
+          "throttled_us": 12986400,
+          "nr_throttled": 66,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 98733,
+          "delta_throttled_us": 1981565,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 17.51,
+          "some_avg60": 3.53,
+          "some_avg300": 0.81,
+          "some_total_us": 101549081,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:23.530698343+08:00",
+        "cpu": {
+          "usage_us": 12684205,
+          "throttled_us": 14886549,
+          "nr_throttled": 76,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 102003,
+          "delta_throttled_us": 1900149,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 21.58,
+          "some_avg60": 4.72,
+          "some_avg300": 1.08,
+          "some_total_us": 101995410,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:24.529841381+08:00",
+        "cpu": {
+          "usage_us": 12783510,
+          "throttled_us": 16859326,
+          "nr_throttled": 86,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99305,
+          "delta_throttled_us": 1972777,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 21.58,
+          "some_avg60": 4.72,
+          "some_avg300": 1.08,
+          "some_total_us": 102521493,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:25.529928541+08:00",
+        "cpu": {
+          "usage_us": 12882052,
+          "throttled_us": 18898270,
+          "nr_throttled": 96,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 98542,
+          "delta_throttled_us": 2038944,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 26.19,
+          "some_avg60": 6.1,
+          "some_avg300": 1.4,
+          "some_total_us": 102873700,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:26.529923932+08:00",
+        "cpu": {
+          "usage_us": 12985728,
+          "throttled_us": 20796751,
+          "nr_throttled": 106,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 103676,
+          "delta_throttled_us": 1898481,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 26.19,
+          "some_avg60": 6.1,
+          "some_avg300": 1.4,
+          "some_total_us": 103198312,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:27.529847609+08:00",
+        "cpu": {
+          "usage_us": 13085007,
+          "throttled_us": 22782284,
+          "nr_throttled": 116,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99279,
+          "delta_throttled_us": 1985533,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 27.42,
+          "some_avg60": 6.98,
+          "some_avg300": 1.61,
+          "some_total_us": 103628120,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:28.529912063+08:00",
+        "cpu": {
+          "usage_us": 13184096,
+          "throttled_us": 24827944,
+          "nr_throttled": 126,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99089,
+          "delta_throttled_us": 2045660,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 27.42,
+          "some_avg60": 6.98,
+          "some_avg300": 1.61,
+          "some_total_us": 104143072,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:29.529869973+08:00",
+        "cpu": {
+          "usage_us": 13282350,
+          "throttled_us": 26872509,
+          "nr_throttled": 136,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 98254,
+          "delta_throttled_us": 2044565,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 30.97,
+          "some_avg60": 8.29,
+          "some_avg300": 1.92,
+          "some_total_us": 104529091,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:30.530897598+08:00",
+        "cpu": {
+          "usage_us": 13382764,
+          "throttled_us": 28933578,
+          "nr_throttled": 146,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100414,
+          "delta_throttled_us": 2061069,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 30.97,
+          "some_avg60": 8.29,
+          "some_avg300": 1.92,
+          "some_total_us": 104873931,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:31.529903118+08:00",
+        "cpu": {
+          "usage_us": 13480956,
+          "throttled_us": 31075566,
+          "nr_throttled": 156,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 98192,
+          "delta_throttled_us": 2141988,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 32.06,
+          "some_avg60": 9.23,
+          "some_avg300": 2.16,
+          "some_total_us": 105397214,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:32.529900432+08:00",
+        "cpu": {
+          "usage_us": 13582534,
+          "throttled_us": 32982625,
+          "nr_throttled": 166,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 101578,
+          "delta_throttled_us": 1907059,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 32.06,
+          "some_avg60": 9.23,
+          "some_avg300": 2.16,
+          "some_total_us": 105926063,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:33.530380656+08:00",
+        "cpu": {
+          "usage_us": 13681948,
+          "throttled_us": 34883515,
+          "nr_throttled": 176,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99414,
+          "delta_throttled_us": 1900890,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 35.85,
+          "some_avg60": 10.66,
+          "some_avg300": 2.51,
+          "some_total_us": 106447988,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:34.530679847+08:00",
+        "cpu": {
+          "usage_us": 13782666,
+          "throttled_us": 36796258,
+          "nr_throttled": 186,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100718,
+          "delta_throttled_us": 1912743,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 35.85,
+          "some_avg60": 10.66,
+          "some_avg300": 2.51,
+          "some_total_us": 106879179,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:35.529719368+08:00",
+        "cpu": {
+          "usage_us": 13884032,
+          "throttled_us": 38691905,
+          "nr_throttled": 196,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 101366,
+          "delta_throttled_us": 1895647,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 37.15,
+          "some_avg60": 11.72,
+          "some_avg300": 2.79,
+          "some_total_us": 107262404,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:36.530791194+08:00",
+        "cpu": {
+          "usage_us": 13983611,
+          "throttled_us": 40589880,
+          "nr_throttled": 206,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99579,
+          "delta_throttled_us": 1897975,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 37.15,
+          "some_avg60": 11.72,
+          "some_avg300": 2.79,
+          "some_total_us": 107782126,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:37.530709629+08:00",
+        "cpu": {
+          "usage_us": 14083230,
+          "throttled_us": 42489326,
+          "nr_throttled": 216,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99619,
+          "delta_throttled_us": 1899446,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 39.29,
+          "some_avg60": 12.94,
+          "some_avg300": 3.1,
+          "some_total_us": 108283723,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:38.529919902+08:00",
+        "cpu": {
+          "usage_us": 14182732,
+          "throttled_us": 44534593,
+          "nr_throttled": 226,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99502,
+          "delta_throttled_us": 2045267,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 39.29,
+          "some_avg60": 12.94,
+          "some_avg300": 3.1,
+          "some_total_us": 108743044,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:39.530599611+08:00",
+        "cpu": {
+          "usage_us": 14282157,
+          "throttled_us": 46539415,
+          "nr_throttled": 236,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99425,
+          "delta_throttled_us": 2004822,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 40.69,
+          "some_avg60": 14.05,
+          "some_avg300": 3.4,
+          "some_total_us": 109262228,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:40.530617685+08:00",
+        "cpu": {
+          "usage_us": 14381690,
+          "throttled_us": 48437976,
+          "nr_throttled": 246,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 99533,
+          "delta_throttled_us": 1898561,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 40.69,
+          "some_avg60": 14.05,
+          "some_avg300": 3.4,
+          "some_total_us": 109608044,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:41.529806534+08:00",
+        "cpu": {
+          "usage_us": 14482459,
+          "throttled_us": 50337923,
+          "nr_throttled": 256,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100769,
+          "delta_throttled_us": 1899947,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 40.93,
+          "some_avg60": 14.97,
+          "some_avg300": 3.67,
+          "some_total_us": 110037943,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:42.530287483+08:00",
+        "cpu": {
+          "usage_us": 14582619,
+          "throttled_us": 52237415,
+          "nr_throttled": 266,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100160,
+          "delta_throttled_us": 1899492,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 40.93,
+          "some_avg60": 14.97,
+          "some_avg300": 3.67,
+          "some_total_us": 110361528,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:43.529902959+08:00",
+        "cpu": {
+          "usage_us": 14682856,
+          "throttled_us": 54137626,
+          "nr_throttled": 276,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100237,
+          "delta_throttled_us": 1900211,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 40.39,
+          "some_avg60": 15.72,
+          "some_avg300": 3.9,
+          "some_total_us": 110863228,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:44.531002987+08:00",
+        "cpu": {
+          "usage_us": 14783169,
+          "throttled_us": 56037104,
+          "nr_throttled": 286,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 100313,
+          "delta_throttled_us": 1899478,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 40.39,
+          "some_avg60": 15.72,
+          "some_avg300": 3.9,
+          "some_total_us": 111338409,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:45.530729224+08:00",
+        "cpu": {
+          "usage_us": 14884233,
+          "throttled_us": 58025174,
+          "nr_throttled": 296,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 101064,
+          "delta_throttled_us": 1988070,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 41.77,
+          "some_avg60": 16.78,
+          "some_avg300": 4.2,
+          "some_total_us": 111800701,
+          "has_full": true
+        }
+      },
+      {
+        "identity": {
+          "target": "http://test-http:8080/healthz",
+          "run_id": "f35df5680576:pid-113368"
+        },
+        "at": "2026-11-28T13:40:46.53068384+08:00",
+        "cpu": {
+          "usage_us": 14981470,
+          "throttled_us": 60057755,
+          "nr_throttled": 306,
+          "quota_us": 10000,
+          "period_us": 100000,
+          "delta_valid": true,
+          "delta_usage_us": 97237,
+          "delta_throttled_us": 2032581,
+          "delta_nr_throttled": 10
+        },
+        "psi": {
+          "some_avg10": 41.77,
+          "some_avg60": 16.78,
+          "some_avg300": 4.2,
+          "some_total_us": 112273109,
+          "has_full": true
+        }
+      }
+    ],
+    "first": "2026-11-28T13:39:59.53096855+08:00",
+    "last": "2026-11-28T13:40:46.53068384+08:00",
+    "gaps": [
+      {
+        "kind": "leading",
+        "from": "2026-11-28T05:39:57.075344925Z",
+        "to": "2026-11-28T13:39:59.53096855+08:00"
+      },
+      {
+        "kind": "trailing",
+        "from": "2026-11-28T13:40:46.53068384+08:00",
+        "to": "2026-11-28T05:40:47.075344925Z"
+      }
+    ]
+  }
+}
